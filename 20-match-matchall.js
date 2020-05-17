@@ -1,0 +1,10 @@
+let str = "this is how it is!";
+let ptrn = /is/g;
+const iObj = str.matchAll(ptrn);
+for (let item of iObj) {
+  console.log(item[0] + "found at" + item.index);
+}
+
+let str1 = "This is how it is";
+let ptrn1 = /is/;
+console.log(str1.match(ptrn1));
